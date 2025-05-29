@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Matemáticas Interactivas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00d4ff;
+    }
+    section {
+      margin-bottom: 50px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    }
+    h2 {
+      color: #0ff;
+      margin-bottom: 15px;
+    }
+    p, li, a {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+    .button-group {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      background-color: #00c6ff;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #0086b3;
+    }
+    .hidden {
+      display: none;
+    }
+    iframe, video {
+      width: 100%;
+      max-width: 600px;
+      height: 315px;
+      margin-top: 20px;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proyecto de Matemáticas Interactivas</h1>
+    <p>Explora temas como Ecuaciones Lineales, Cuadráticas y el Teorema de Pitágoras de forma dinámica</p>
+  </header>
+
+  <section id="menu">
+    <h2>Menú Principal</h2>
+    <p>Este menú fue diseñado siguiendo una estructura clara. Se colocó una etiqueta principal, seguida por un campo de texto con la descripción general. Luego, se agregaron botones distribuidos en disposiciones verticales y horizontales para facilitar la navegación. Estos botones redirigen a las secciones temáticas: Ecuaciones Lineales, Cuadráticas, Teorema de Pitágoras, Manual del Proyecto y un botón para salir. Cada uno de ellos está enlazado con su respectiva pantalla.</p>
+    <div class="button-group">
+      <button onclick="mostrar('lineales')">Ecuaciones Lineales</button>
+      <button onclick="mostrar('cuadraticas')">Ecuaciones Cuadráticas</button>
+      <button onclick="mostrar('pitagoras')">Teorema de Pitágoras</button>
+      <button onclick="mostrar('manual')">Manual del Proyecto</button>
+    </div>
+  </section>
+
+  <section id="lineales" class="hidden">
+    <h2>Ecuaciones Lineales</h2>
+    <p>Las ecuaciones lineales son aquellas que representan líneas rectas. Se escriben generalmente en la forma y = mx + b.</p>
+    <h3>Más información</h3>
+    <textarea rows="4">las ecuaciones lineales lo primero que hice fue usar una dsiposicion horixzontal para agregar una etiqueta abajo de la disposicion horizontal agregue un visor web que me deja ver en tiempo real la pagina interactiva del portal academico sobre las ecuaciones lineales  despues continue agregsando disposiciones horizonatales y agregue una disposicion horizontal co la etiqueta descripcion y url justo abajo agregue una diasposicion que incluye un campo de texto con una pequena descripcion de cada pagina  y sus respectivas urls 
+abajo de eso continue agregando otra disposicion que contiene un boton que esta centrado con el nombre de informacion del tema al hacer click sobre el te lleva a una extension de su pagina que tiene una etoiqueta llamada ecuacion diferencia abajo tiener un video agregado con la opcion imagen continunandpo tenemos na disposicion con una etiqueta llanda informacion general y aun lado un campo de exto cn la infornmacion general continunado con el mismo procedimiento tenemo definicion con la definicion al lado derecho abajo los tipos con un texto con los tipos abajo tenemos otra etiqueta llamada importancion a un lado otro video de un planeta a un lado el voideos tenemos el texo con la importancia hasta abajo tenemos un video del espacio  abajo un boton menu que te devuelve al screem 1 y otro boton al lado contrario que se llama lineales que te devuelve ala scrren principal de las ecuaciones lineales continuando en la principal tenemos dos botones uno anterior que te devuelve al anterior y al lado opuesto tenemos el boton siguiente que te lleva al siguiente scrrem. </textarea>
+    <button onclick="mostrar('menu')">Volver al Menú</button>
+  </section>
+
+  <section id="cuadraticas" class="hidden">
+    <h2>Ecuaciones Cuadráticas</h2>
+    <p>Las ecuaciones cuadráticas tienen la forma ax² + bx + c = 0. Su gráfica es una parábola.</p>
+    <h3>solucion y informacion</h3>
+    <textarea rows="4">Las soluciones se obtienen con la fórmula general: x = (-b ± √(b²-4ac))/2a  
+        ecuaciones cuadraticas tiene una etiqueta con el nombre ecuaciones cuadraticas dejemos claro que todo esta dentro de disposiciones horiszontales 
+aabajo tenemos un campo de texto con el texto link del video justo abajo de este aviso 
+justo abjo tenemos un boton llamda rcuacion cuadratica formula general que te lleva al video de youtube que  tiene como nombre el mismo nombre del boton abajo tengo un campo de texto qyue contiene texto sobre las ecuacuones cuadraticas abajo de ese video tenemos una imagen con una ecuacon y terminos abajoi tengo una etiquetra con el nombre de soluciones de na ecuacion cuadratica 
+justo abajo tengo un campo de texto con mas infornmacion de la ecuacion cuadratica  abjo de ese tengo una imagen que ocupa el 60 porciento del lado derecho que cntiene las curva y al lado izquierdo tengo un campo de texto con informacion hasta abajo tengo 3 btotones anterior que esta al lado derechgo y que te lleva al anterior el boton menu que esta a la izquierda de anterior pero al centro/abajo de la aplicacion y al lADO IZQUIERDO TENGO A siguiente que me lleva a la screem siguiente 
+    </textarea>
+    <button onclick="mostrar('menu')">Volver al Menú</button>
+  </section>
+
+  <section id="pitagoras" class="hidden">
+    <h2>Teorema de Pitágoras</h2>
+    <p>En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos. sta screem trata del teorema de pitagoras con una etiqueta que contiene ese mismo nombre y abajo un campo de texto que contiene la relacion del teorenma de pitagoras abajo de eso integrado en el mismo texto tengo una imsgen con informavcion sencilla pero eficaz abajp teng otro campo de texto con la teoria simplificada abajo tengo una etiqueta con el nombre de que usos tiene justo abajo agregue un visor web que contiene un video de youtube explicando parte del  tema abjo tengpo un campo e texto con mas informacion del teorema de pitagoras justo abajo de la informacion tengo una imagen sencialla del teorema de pitagoras abajo repito la misma secuencia de botones de anterior menu y siguiente </p>
+    <img src="https://w7.pngwing.com/pngs/228/280/png-transparent-pythagorean-theorem-special-right-triangle-line-triangle-angle-text-triangle-thumbnail.png" alt="Triángulo y fórmula" style="width: 100%; max-width: 400px;"/>
+    <button onclick="mostrar('menu')">Volver al Menú</button>
+  </section>
+
+  <section id="manual" class="hidden">
+    <h2>Manual del Proyecto</h2>
+    <p>Este proyecto fue desarrollado con App Inventor 2. Se organizaron múltiples pantallas (screems), cada una diseñada con disposiciones horizontales y verticales que contienen etiquetas, campos de texto, botones, visores web, imágenes y videos. Se estructuró de la siguiente forma:</p>
+    <ul>
+      <li><strong>Screen 1:</strong> Es el menú principal con 4 botones que redirigen a las secciones principales y un botón para salir. Cada botón está colocado en disposiciones específicas para un diseño limpio y funcional.</li>
+      <li><strong>Screen 2 (Ecuaciones Lineales):</strong> Contiene un visor web, botones, videos y textos explicativos sobre ecuaciones lineales.</li>
+      <li><strong>Screen 3 (Ecuaciones Cuadráticas):</strong> Presenta un video educativo, botones, imágenes y textos explicativos sobre el tema.</li>
+      <li><strong>Screen 4 (Teorema de Pitágoras):</strong> Incluye etiquetas, textos explicativos, imágenes, un visor web con un video, y los botones de navegación.</li>
+    </ul>
+    <p>Cada botón tiene un bloque de programación sencillo que lo dirige a la pantalla correspondiente. Las imágenes de fondo se descargaron en alta resolución, se exportaron e integraron a cada screen en App Inventor.</p>
+    <button onclick="mostrar('menu')">Volver al Menú</button>
+  </section>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => {
+        if (sec.id === id || sec.id === 'menu') {
+          sec.classList.remove('hidden');
+        } else {
+          sec.classList.add('hidden');
+        }
+      });
+    }
+    mostrar('menu');
+  </script>
+</body>
+</html>
